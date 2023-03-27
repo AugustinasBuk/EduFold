@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scheme.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a> </li>
+                    <li><a href="about.html">ABOUT</a> </li>
+                    <li><a href="course.html">COURSE</a> </li>
+                    <li><a href="blog.html">BLOG</a> </li>
+                    <li><a href="contact.html">CONTACT</a> </li>
+                    <li><a href="schema.html">HTML SCHEME</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>HTML SCHEME</h1>
+    </section>
+
+<div class="wrapper">
+    <div class="content">
+        <div class="first">
+            body of page
+            <div class="second">
+                section sub-header
+                <div class="third">
+                nav
+                <div class="fourth">
+                a
+                </div>
+                <div class="fourth">
+                div nav-links
+                </div>
+                </div>
+                
+            </div>
+            <div class="second">
+                div wrapper
+                <div class="third">
+                    div content
+                    <div class="fourth">
+                        course
+                    </div>
+                    <div class="fourth">
+                        facilities
+                        <div class="fifth">
+                            img 1
+                        </div>
+                        <div class="fifth">
+                            img 2
+                        </div>
+                        <div class="fifth">
+                            img 3
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    banner
+                    <div class="fourth">
+                        img
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                section footer
+                <div class="third">
+                   div icons 
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="banner">
+        <img src="images/ad.png" class="row-photo">
+        <img src="images/banner3.png" class="column-photo">
+    </div>
+</div>
+
+    
+
+    <!------ Footer  ------>
+
+    <section class="footer">
+
+        <h4>About Us</h4>
+        <p>We’re a community of people who bridge our disparate experiences and identities. Meet the people and places
+            that make
+            Eduford home.</p>
+        <div class="icons">
+            <i class="fa  fa-brands fa-facebook"></i>
+            <i class="fa  fa-brands fa-twitter"></i>
+            <i class="fa  fa-brands fa-instagram"></i>
+            <i class="fa  fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart"></i> By A.B</p>
+
+    </section>
+
+
+    <!--- ---JavaScript For Toggle Menu------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+    <script src="options.js"></script>
+</body>
+
+</html>

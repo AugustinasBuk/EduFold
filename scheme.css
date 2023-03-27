@@ -1,0 +1,26 @@
+.first{
+background-color: rgba(0, 0, 255, 0.2);
+    width: 300px;
+}
+
+.second, .third, .fourth, .fifth{
+background-color: rgba(0, 128, 0, 0.2);
+
+}
+.four-one, .four-two , .four-three{
+background-color: rgba(255, 255, 0, 0.2);
+}
+
+
+div .first, div .second, div .third , div .fourth, div .fifth {
+    padding: 20px;
+    border: 1px solid black;
+}
+.wrapper .banner {
+    text-align: right;
+    align-items: end;
+    margin: auto;
+    margin-right: 0px;
+    background-size: cover;
+    max-height: max-content;
+}

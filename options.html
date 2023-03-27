@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a> </li>
+                    <li><a href="about.html">ABOUT</a> </li>
+                    <li><a href="course.html">COURSE</a> </li>
+                    <li><a href="blog.html">BLOG</a> </li>
+                    <li><a href="contact.html">CONTACT</a> </li>
+                    <img src="images/moon.png" id="modeIcon">
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Options</h1>
+    </section>
+    <!------ About Us Content  ------>
+
+
+    <div class="wrapper">
+        <div class="content">
+            <section class="options">
+
+                <div class="row">
+
+                    <div class="options-col">
+
+                        <h1>Heading size</h1>
+                        <a href="" class="btn btn-outline-secondary" id="normal">DEFAULT SIZE</a>
+                        <a href="" class="btn btn-outline-secondary" id="medium">MEDIUM SIZE</a>
+                        <a href="" class="btn btn-outline-secondary" id="large">LARGE SIZE</a>
+                        <h1>Heading color</h1>
+                        <a href="" class="btn btn-outline-secondary" id="normalColor">DEFAULT COLOR</a>
+                        <a href="" class="btn btn-outline-secondary"id="greenColor">GREEN COLOR</a>
+                        <a href="" class="btn btn-outline-secondary" id="yellowColor">YELLOW COLOR</a>
+                        
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+        </div>
+        
+    </div>
+
+
+    <!------ Facilities ------>
+
+
+
+
+
+
+    <!------ Footer  ------>
+
+    <section class="footer">
+
+        <h4>About Us</h4>
+        <p>We’re a community of people who bridge our disparate experiences and identities. Meet the people and places
+            that make
+            Eduford home.</p>
+        <div class="icons">
+            <i class="fa  fa-brands fa-facebook"></i>
+            <i class="fa  fa-brands fa-twitter"></i>
+            <i class="fa  fa-brands fa-instagram"></i>
+            <i class="fa  fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart"></i> By A.B</p>
+
+    </section>
+
+
+    <!--- ---JavaScript For Toggle Menu------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        var modeIcon = document.getElementById("modeIcon");
+
+        var normal = document.getElementById("normal");
+        var medium = document.getElementById("medium");
+        var large = document.getElementById("large");
+
+        var normalColor = document.getElementById("normalColor");
+        var greenColor = document.getElementById("greenColor");
+        var yellowColor = document.getElementById("yellowColor");
+
+        normal.onclick =function(){
+            document.body.classList.add("default-size")
+            document.body.classList.remove("medium-size")
+            document.body.classList.remove("large-size")
+            localStorage.setItem("heading","default")
+        }
+        medium.onclick = function () {
+                document.body.classList.add("medium-size")
+                document.body.classList.remove("default-size")
+                document.body.classList.remove("large-size")
+                localStorage.setItem("heading", "medium")
+            }
+        large.onclick = function () {
+        document.body.classList.add("large-size")
+        document.body.classList.remove("medium-size")
+        document.body.classList.remove("default-size")
+        localStorage.setItem("heading", "large")
+    }
+
+        normalColor.onclick = function () {
+            document.body.classList.add("default-color")
+            document.body.classList.remove("green-color")
+            document.body.classList.remove("yellow-color")
+            localStorage.setItem("color", "default")
+        }
+        greenColor.onclick = function () {
+            document.body.classList.add("green-color")
+            document.body.classList.remove("yellow-color")
+            document.body.classList.remove("default-color")
+            localStorage.setItem("color", "green")
+        }
+        yellowColor.onclick = function () {
+            document.body.classList.add("yellow-color")
+            document.body.classList.remove("default-color")
+            document.body.classList.remove("green-color")
+            localStorage.setItem("color", "yellow")
+        }
+
+
+        
+        
+        modeIcon.onclick = function(){
+            document.body.classList.toggle("dark-theme")
+            if(document.body.classList.contains("dark-theme")){
+                localStorage.setItem("theme", "dark")
+            }
+            else{
+                localStorage.setItem("theme","light")
+            }
+        }
+
+
+    </script>
+    <script src="options.js"></script>
+</body>
+
+</html>

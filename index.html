@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+          <a href="index.html"><img src="images/logo.png" alt=""></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a> </li>
+                <li><a href="about.html">ABOUT</a> </li>
+                <li><a href="course.html">COURSE</a> </li>
+                <li><a href="blog.html">BLOG</a> </li>
+                <li><a href="contact.html">CONTACT</a> </li>
+                <li><a href="options.html">OPTIONS</a> </li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>  
+        </nav>
+       <div class="text-box">
+        <h1>World's Biggest University </h1>
+        <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we’re the
+        nation’s oldest Catholic and Jesuit university.<br> Today we’re a forward-looking, diverse community devoted to social
+        justice, restless inquiry and respect for each person’s individual needs and talents.. and you are good to go.
+        </p>
+        <a href="about.html"  class="btn btn-outline-secondary">Visit Us To Know More</a>
+       </div> 
+    </section>
+
+<!------ Course ------>
+
+
+<div class="wrapper">
+    <div class="content">
+        <section class="course">
+            <h1>Courses We Offer</h1>
+            <p>Explore the intersection of technology and society. Learn about environmental justice. Take the famous Problem of
+                God
+                course. Our innovative courses inspire and invite you to help solve some of today’s most pressing local,
+                national and
+                global issues.</p>
+        
+            <div class="home-grid">
+                <div class="course-col col-lg-12 col-md-12 col-sm-6">
+                    <h3>Bachelor's degree</h3>
+                    <p>An online bachelor's degree in information technology can lead to in-demand careers.
+                        A bachelor's degree in information technology requires about 120 credits of coursework, which most
+                        full-time students
+                        take four years to complete. Some online programs offer accelerated tracks that students can finish in
+                        less time.
+                    </p>
+                </div>
+                <div class="course-col col-lg-12 col-md-12 col-sm-6">
+                    <h3>Master's degree</h3>
+                    <p>With a Master in Information technology, you will not only get to widen your perspective in the field,
+                        but also to apply
+                        your knowledge in real-life situations. The degree will allow you to specialize in designing, managing
+                        and implementing
+                        brand-new information technology services.
+                    </p>
+                </div>
+                <div class="course-col col-lg-12 col-md-12 col-sm-6">
+                    <h3>A Doctor of Philosophy degree</h3>
+                    <p>A PhD in IT covers research on the business, economic, and organizational implications of digital
+                        and information technologies. Students acquire an understanding of underlying technologies and
+                        information theory
+                        principles, in addition to their economic and organizational implications.
+                    </p>
+                </div>
+            </div>
+        
+        </section>
+        
+        <!------ Campus ------>
+        
+        <section class="campus">
+        
+            <h1>Our Global Campus</h1>
+            <p>The University of Eduford’s main campus is located on Bloomfield Avenue. Surrounded by green space, the main
+                campus is
+                divided into residential and academic buildings connected by a bridge that overlooks the north branch of the
+                Park River,
+                known to us as Hog River.</p>
+        
+        
+            <div class="carousel">  
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/newyork.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>NEW YORK</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/london.jpg" class="d-block w-100" alt="..."
+                        height="300px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>LONDON</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/vilnius.jpg" class="d-block w-100" alt="..."
+                        height="300px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>VILNIUS</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+        
+        </section>
+        
+        <!------ Facilities ------>
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>We commit to meet the financial need of every admitted undergraduate student. We don’t consider your ability to
+                pay when
+                we review your application, and we don’t base our decision on whether you can cover the cost. If you’re accepted
+                here,
+                you belong here.</p>
+        
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png">
+                    <h3>World Class Library</h3>
+                    <p>Pursue research at Eduford’s libraries, which include more than 3.5 million holdings. Whether your focus
+                        is on a
+                        specific discipline, interdisciplinary areas or emerging fields, our libraries offer academic resources,
+                        a maker hub,
+                        collaborative spaces and more.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/basketball.png">
+                    <h3>Largest Play Ground</h3>
+                    <p>The College introduces students to philosophy and theology and challenges them to delve deeply into the
+                        arts,
+                        humanities, languages, social sciences and sciences.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/cafeteria.png">
+                    <h3>Tasty and Healthy Food</h3>
+                    <p>Whether students pursue studies in Arabic, chemistry, government or one of hundreds of other
+                        opportunities, they are
+                        part of a rich legacy of academic excellence designed to serve them well in an ever-changing world.</p>
+                </div>
+            </div>
+        
+        </section>
+        
+        <!------ Testimonials  ------>
+        
+        <section class="testimonials">
+            <h1>What Our Student Says</h1>
+            <p>We commit to meet the financial need of every admitted undergraduate student. We don’t consider your ability to
+                pay when
+                we review your application, and we don’t base our decision on whether you can cover the cost. If you’re accepted
+                here,
+                you belong here.</p>
+        
+            <div class="testimonial-grid">
+                <div class="testimonial-col">
+                    <div>
+                        <img src="images/user1.jpg">
+                        <p>“Eduford is home to me not because of the fancy buildings like Healy Hall, or its prestigious
+                            reputation, but rather
+                            because of the university’s care for the whole person as each of us attempts to live our lives for
+                            others.”</p>
+                        <h3>Toma Petrauskaitė</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <div>
+                        <img src="images/user2.jpg">
+                        <p>“It’s likely that you will come to love some of the most amazing souls this campus has to offer. That
+                            love may come in
+                            the form of friendships that you know will last forever.”</p>
+                        <h3>Tomas Tomaitis</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        
+        <!------ Call To Action  ------>
+        
+        <section class="cta">
+        
+            <h1>Enroll For Our Various Online Courses <br> Anywhere From The World</h1>
+            <a href="contact.html"  class="btn btn-outline-secondary">CONTACT US</a>
+        </section>
+    </div>
+    <div class="banner">
+        <img src="images/ad.png" class="row-photo">
+        <img src="images/banner3.png" class="column-photo">
+    </div>
+</div>
+
+
+<!------ Footer  ------>
+
+<section class="footer">
+
+    <h4>About Us</h4>
+    <p>We’re a community of people who bridge our disparate experiences and identities. Meet the people and places that make
+    Eduford home.</p>
+    <div class="icons">
+        <i class="fa  fa-brands fa-facebook"></i>
+        <i class="fa  fa-brands fa-twitter"></i>
+        <i class="fa  fa-brands fa-instagram"></i>
+        <i class="fa  fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made With <i class="fa fa-heart"></i> By A.B</p>
+
+</section>
+
+
+<!--- ---JavaScript For Toggle Menu------>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+   <script>
+    
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+
+   </script>
+<script src="options.js"></script>
+</body>
+</html>
+
+
+
+
+
